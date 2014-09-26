@@ -1,6 +1,4 @@
-* {
-	border:1px solid black;
-}
+
 
 body {
 	margin: auto 0;
@@ -37,3 +35,48 @@ img.logo{
 	margin-right: 8%;
 	margin-left: 8%;
 }
+
+h1 {
+	padding-top: 30px;
+	color:#838B83;
+}
+
+.input {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	min-width: 50px;
+	max-width: 400px;
+}
+
+input.query {
+	display: inline-block;
+	position: relative;
+	padding: 8px 25px 8px 8px;
+	width: 90%;
+}
+
+input.plus {
+	display: inline-block;
+	position: relative;
+	width: 5%;
+	top:-27px;
+	right: -175px;
+
+}
+
+.list{
+	display: block;
+	margin: 0 auto;
+	min-width: 50px;
+	max-width: 400px;
+	padding-bottom: 20px;
+
+}
+
+p {
+	border-top: 1px dashed black;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
