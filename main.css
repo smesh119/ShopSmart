@@ -1,16 +1,19 @@
 
-
 body {
 	margin: auto 0;
 	text-align: center;
 }
+
+a:hover {
+	background: #E0EEE0;
+}
+
 ul, ol, li {
 	list-style: none;
 }
 
 #top{
 	padding-top: 30px;
-	padding-bottom:30px;
 	background: #43CD80;
 }
 
@@ -50,10 +53,11 @@ h1 {
 }
 
 input.query {
-	display: inline-block;
+	display: block;
 	position: relative;
 	padding: 8px 25px 8px 8px;
-	width: 90%;
+	width: 300px;
+	margin-bottom: 25px;
 }
 
 input.plus {
@@ -66,7 +70,6 @@ input.plus {
 }
 
 .list{
-	display: block;
 	margin: 0 auto;
 	min-width: 50px;
 	max-width: 400px;
@@ -74,9 +77,36 @@ input.plus {
 
 }
 
-p {
-	border-top: 1px dashed black;
-	padding-top: 15px;
-	padding-bottom: 5px;
+.on-list {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
+footer {
+	position: absolute;
+	bottom: 0;
+}
+
+span {
+	padding-left: 8px;
+}
+
+.list-item {
+	border-top: 1px dotted black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	text-align: left;
+}
+
+a.remove {
+	color: gray;
+	text-decoration: none;
+	font-size: 80%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+.none {
+	display: none;
+}

@@ -1,54 +1,122 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      ShopSmart | the best way to shop
+    </title>
+    <meta name="Smarter shopping, smarter lists" content="ShopSmart">
+    <meta name="Jessica Ryhanych" content="Ryhanych Shopping List">
+    
+    <link rel="stylesheet" href="main.css">
 
-  <title>ShopSmart | the best way to shop</title>
-  <meta name="Smarter shopping, smarter lists" content="ShopSmart">
-  <meta name="Jessica Ryhanych" content="Ryhanych Shopping List">
-
-  <link rel="stylesheet" href="main.css">
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <script src="//use.typekit.net/ift8edp.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
-</head>
-
-	<div id="top">
-
-			<img class="logo" src="ShopSmartlogo.png">
+    
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+  <script src="//use.typekit.net/ift8edp.js">
+  </script>
+  <script>
+    try{
+      Typekit.load();
+    }catch(e){
+    }
+  </script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="app.js"></script>
+  </head>
+  
+  <div id="top">
+    
+    <img class="logo" src="ShopSmartlogo.png">
 	
-
-		<div class="container">
-			<div class="search">
-				<h1>What's on your list?</h1>
-					<div class="input">
-				<input class="query" type="">
-				<input class="plus" type="image"src="plus.png">
-					</div>
-					<div class="list">
-					<p class="on-list">Craft beer</p>
-					<p class="off-list">Chocolate</p>
-					<p class="off-list">Taco shells</p>
-					<p class="on-list">Cheese</p>
-					<p class="off-list">Pico de gallo</p>
-					<p class="on-list">Guacamole</p>
-					<p class="off-list">Sour cream</p>
-					<p class="off-list">Chicken</p>
-					<p class="off-list">Cilantro</p>
-			</div>
+      
+      <div class="container">
+        <div class="search">
+          <h1>
+            What's on your list?
+          </h1>
+          <div class="input">
+            <input class="query" type="text" name="text">
+          </div>
+          <div class="list">
+            <div class="list-item">
+              <input type="checkbox" name="item"  value="1">
+              <span class="on-list">
+                Craft beer
+              </span>
+              <span>
+                <a href="#" class="button remove">
+                  Remove item
+                </a>
+              </span>
+              <br>
+            </div>
+            
+            <div class="list-item none">
+              <input type="checkbox" name="item"  value="1">
+              <span>
+                Craft beer
+              </span>
+              <span>
+                <a href="#" class="button remove">
+                  Remove item
+                </a>
+              </span>
+              <br>
+            </div>
+            <div class="list-item">
+              <input type="checkbox" name="item"  value="1" checked>
+              <span>
+                Guacamole
+              </span>
+              <span>
+                <a href="#" class="button remove">
+                  Remove item
+                </a>
+              </span>
+              <br>
+            </div>
+            <div class="list-item none">
+              <input type="checkbox" name="item"  value="1">
+              <span>
+                Pico de gallo
+              </span>
+              <span>
+                <a href="#" class="button remove">
+                  Remove item
+                </a>
+              </span>
+              <br>
+            </div>
+            <div class="list-item">
+              <input type="checkbox" name="item"  value="1">
+              <span>
+                Chocolate
+              </span>
+              <span>
+                <a href="#" class="button remove">
+                  Remove item
+                </a>
+              </span>
+              <br>
+            </div>
+            
+            
+          </div>
 		</div>
-<footer>
-</footer>
-
-
-
-	</div>
-
-<body>
-  <script src="js/scripts.js"></script>
-</body>
-</html>
+          <footer>
+          </footer>
+          
+          
+          
+      </div>
+      
+      <body>
+        <script src="js/scripts.js">
+        </script>
+      </body>
+  </html>
