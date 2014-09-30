@@ -1,15 +1,15 @@
 
+
 body {
 	margin: auto 0;
 	text-align: center;
 }
 
-a:hover {
-	background: #E0EEE0;
-}
-
 ul, ol, li {
 	list-style: none;
+	margin: 0;
+  padding: 0;
+
 }
 
 #top{
@@ -60,23 +60,6 @@ input.query {
 	margin-bottom: 25px;
 }
 
-input.plus {
-	display: inline-block;
-	position: relative;
-	width: 5%;
-	top:-27px;
-	right: -175px;
-
-}
-
-.list{
-	margin: 0 auto;
-	min-width: 50px;
-	max-width: 400px;
-	padding-bottom: 20px;
-
-}
-
 .on-list {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -91,7 +74,15 @@ span {
 	padding-left: 8px;
 }
 
+.list{
+	text-align: center;
+
+}
+
 .list-item {
+	margin: 0 auto;
+	min-width: 50px;
+	max-width: 400px;
 	border-top: 1px dotted black;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -99,14 +90,6 @@ span {
 	text-align: left;
 }
 
-a.remove {
-	color: gray;
-	text-decoration: none;
-	font-size: 80%;
-	display: inline-block;
-	float: right;
-	margin-right: 20px;
-}
 .none {
 	display: none;
 }
