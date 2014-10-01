@@ -76,7 +76,6 @@ span {
 
 .list{
 	text-align: center;
-
 }
 
 .added {
@@ -88,6 +87,8 @@ span {
 	padding-bottom: 20px;
 	padding-left: 20px;
 	text-align: left;
+		background-color: gray;
+
 }
 
 .none {

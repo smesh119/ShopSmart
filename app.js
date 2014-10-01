@@ -7,6 +7,11 @@ $(document).ready(function() {
               <span class=\"on-list\">" + toAdd + "</span></li>");
 		}
 	});
+		$(function(){
+			$(".added").sortable();
+			$(".added").disableSelection();
+		});
+
 		$(document.body).delegate(".list li", "click", function(event){
 		$(this).remove()
 		});
