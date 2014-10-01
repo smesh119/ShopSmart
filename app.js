@@ -1,25 +1,23 @@
 $(document).ready(function() {
+
+	/* INPUT SECTION on keydown*/
 	$(".query").keydown(function(e){
 		if(e.which == 13){
 			var toAdd = $("input[name=checklistitem]").val();
 			console.log(toAdd)
-			$(".list").append("<li class=\"added\"><input type=\"checkbox\" name=\"item\"  value=\"1\">\
-              <span class=\"on-list\">" + toAdd + "</span></li>");
+			$(".list").append("<li class=\"added\"><span class=\"on-list\">" + toAdd + "</span><img class=\"delete\" src=\"delete.gif\"></li>");
 		}
 	});
-		$(function(){
-			$(".added").sortable();
-			$(".added").disableSelection();
-		});
 
-		$(document.body).delegate(".list li", "click", function(event){
-		$(this).remove()
+		/* CLICK LIST ITEM TO cross out*/
+		$(document.body).delegate(".list .on-list", "click", function(event){
+		$(this).css("text-decoration", "line-through");
 		});
 		
-		var target = $(event.target);
-		if (target.is("input[name=item]")) {
-			target.stop();
-		};
-	
+		$(".delete").click(function(){
+			$(this).parent().remove();
+		});
+
+
 
 });
