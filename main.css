@@ -89,6 +89,7 @@ span {
 
 .added {
 	margin: 0 auto;
+	margin-bottom: 5px;
 	min-width: 50px;
 	max-width: 400px;
 	border-top: 1px dotted black;
@@ -96,7 +97,7 @@ span {
 	padding-bottom: 20px;
 	padding-left: 20px;
 	text-align: left;
-	background-color: #F5FFFA;
+	background-color: #FCFCFC;
 }
 
 .delete {
