@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 
 		/* CLICK LIST ITEM TO cross out*/
-		$(document.body).delegate(".list .on-list", "click", function(event){
+		$(document.body).delegate(".list, .on-list", "click", function(event){
 		$(this).toggleClass("highlight");
 		});
 		
