@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 	/*$(".test").sortable({ cursor: "move" });*/
 	$(function() {
-    $( "ul" ).sortable("refresh");
+    $( "ul" ).sortable();
     $( "ul" ).disableSelection();
 
   });
