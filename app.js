@@ -6,7 +6,7 @@ $(document).ready(function() {
 		var toAdd = $("input[name=checklistitem]").val();
 		console.log(toAdd);
 		$(".list").append("<li class=\"added\"><span class=\"on-list\">" + toAdd + "</span><img class=\"delete\" src=\"delete.gif\"></li>").sortable("refresh");	
-		$("ul").sortable()
+		$("ul").sortable();
 		}	
 	});
 
