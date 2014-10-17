@@ -24,11 +24,11 @@ $(document).ready(function() {
 	$(function() {
     $( "ul" ).sortable();
     $( "ul" ).disableSelection();
-  	});
 
-
+  });
+		
 		/* CLICK LIST ITEM TO cross out*/
-		$(document.body).delegate(".list", ".on-list", "click", function(event){
+		$(document.body).delegate(".list .on-list", "click", function(event){
 		$(this).toggleClass("highlight");
 		});
 		
