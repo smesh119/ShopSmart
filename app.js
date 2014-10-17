@@ -22,8 +22,8 @@ $(document).ready(function() {
 
 	/*$(".test").sortable({ cursor: "move" });*/
 	$(function() {
-    $( "ul" ).sortable();
-    $( "ul" ).disableSelection();
+    $( "ul" ).sortable("refresh");
+    $( "ul" ).disableSelection("refresh");
 
   });
 		
