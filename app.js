@@ -5,7 +5,7 @@ $(document).ready(function() {
 		if(e.which == 13){
 		var toAdd = $("input[name=checklistitem]").val();
 		console.log(toAdd);
-		$(".list").append("<li class=\"added\"><span class=\"on-list\">" + toAdd + "</span><img class=\"delete\" src=\"delete.gif\"></li>").sortable();	
+		$(".list").append("<li class=\"added\"><span class=\"on-list\">" + toAdd + "</span><img class=\"delete\" src=\"delete.gif\"></li>").sortable("refresh");	
 		$("ul").sortable()
 		}	
 	});
