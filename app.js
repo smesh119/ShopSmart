@@ -3,45 +3,47 @@ $(document).ready(function() {
 	/* INPUT SECTION on keydown*/
 	$(".query").keydown(function(e){
 		if(e.which == 13){
-			var toAdd = $("input[name=checklistitem]").val();
-			console.log(toAdd);
-			$(".list").append("<li class=\"added\"><span class=\"on-list\">" + toAdd + "</span><img class=\"delete\" src=\"delete.gif\"></li>");	
+		var toAdd = $("input[name=checklistitem]").val();
+		console.log(toAdd);
+		$(".list").append("
+		<li class=\"added\">
+		  <span class=\"on-list\">
+		    " + toAdd + "
+		  </span><img class=\"delete\" src=\"delete.gif\"></li>");	
 		}	
-
-		
 	});
 
 	$(".query").on("focus", function(e){
-        $(".query").val("")
-    });
+	$(".query").val("")
+	});
 
-    $(".query").keyup(function(e){
-        if (e.which == 13) {
-        	$(".query").val("")
-        };
-    });
+	$(".query").keyup(function(e){
+	if (e.which == 13) {
+	$(".query").val("")
+	};
+	});
 
-			/*
-			$(function(){
-			$(".added").sortable("refresh");
-			$(".added").disableSelection();
-			});
-*/
+	/*
+	$(function(){
+	$(".added").sortable("refresh");
+	$(".added").disableSelection();
+	});
+	*/
 
 	$(function() {
-    $( "ul" ).sortable();
-    $( "ul" ).disableSelection();
+	$( "ul" ).sortable();
+	$( "ul" ).disableSelection();
 	});
-			
 
-		
-		$(document.body).delegate(".list .on-list", "click", function(event){
-		$(this).toggleClass("highlight");
-		});
-		
-		$(document.body).delegate(".delete", "click", function(){
-			$(this).parent().remove();
-		});
 
-		
+
+	$(document.body).delegate(".list .on-list", "click", function(event){
+	$(this).toggleClass("highlight");
+	});
+
+	$(document.body).delegate(".delete", "click", function(){
+	$(this).parent().remove();
+	});
+
+
 });
