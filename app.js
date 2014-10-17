@@ -7,9 +7,7 @@ $(".query").keydown(function(e){
 	$(".list").append("<li class=\"added\"><span class=\"on-list\"> " + toAdd + "</span>
   	<img class=\"delete\" src=\"delete.gif\">
 	</li>");	
-	}	
-	$("ul").sortable("refresh");
-	$( "ul" ).disableSelection();
+}	
 });
 
 $(".query").on("focus", function(e){
@@ -21,13 +19,12 @@ if (e.which == 13) {
 $(".query").val("")
 };
 });
-/*
+
 $(function() {
 $( "ul" ).sortable();
 $( "ul" ).disableSelection();
 
 });
-*/
 
 $(document.body).delegate(".list .on-list", "click", function(event){
 $(this).toggleClass("highlight");
