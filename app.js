@@ -6,7 +6,6 @@ $(document).ready(function() {
 			var toAdd = $("input[name=checklistitem]").val();
 			console.log(toAdd)
 			$(".list").append("<li class=\"added\"><span class=\"on-list\">" + toAdd + "</span><img class=\"delete\" src=\"delete.gif\"></li>");
-			$(.list).sortable("refresh");
 }	
 	});
 
@@ -21,7 +20,7 @@ $(document).ready(function() {
     });
 
 	/*$(".test").sortable({ cursor: "move" });*/
-	$(document.body).delegate(function() {
+	$(document.body).delegate("toAdd", function() {
     $( "ul" ).sortable("refresh");
     $( "ul" ).disableSelection("refresh");
 
