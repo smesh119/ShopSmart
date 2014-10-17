@@ -6,8 +6,9 @@ $(document).ready(function() {
 			var toAdd = $("input[name=checklistitem]").val();
 			console.log(toAdd);
 			$(".list").append("<li class=\"added\"><span class=\"on-list\">" + toAdd + "</span><img class=\"delete\" src=\"delete.gif\"></li>");
-		
-}	
+		}	
+		$( "ul" ).sortable();
+    $( "ul" ).disableSelection();
 	});
 
 	$(".query").on("focus", function(e){
@@ -19,12 +20,13 @@ $(document).ready(function() {
         	$(".query").val("")
         };
     });
-
+/*
 	$(function() {
     $( "ul" ).sortable();
     $( "ul" ).disableSelection();
 
   });
+*/
 		
 		$(document.body).delegate(".list .on-list", "click", function(event){
 		$(this).toggleClass("highlight");
