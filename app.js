@@ -21,11 +21,13 @@ $(document).ready(function() {
     });
 
 	/*$(".test").sortable({ cursor: "move" });*/
-	$(function() {
-    $( "ul" ).sortable();
-    $( "ul" ).disableSelection();
-
+	
   });
+
+	$(function() {
+    $( "ul" ).sortable("refresh");
+    $( "ul" ).disableSelection();
+});
 		
 		/* CLICK LIST ITEM TO cross out*/
 		$(document.body).delegate(".list .on-list", "click", function(event){
