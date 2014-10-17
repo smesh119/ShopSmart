@@ -21,10 +21,12 @@ $(document).ready(function() {
         };
     });
 
+			/*
 			$(function(){
 			$(".added").sortable("refresh");
 			$(".added").disableSelection();
 			});
+*/
 
 	$(function() {
     $( "ul" ).sortable();
