@@ -24,7 +24,7 @@ $(document).ready(function() {
 	
   });
 
-	$(function() {
+	$(document.body).ready(function() {
     $( "ul" ).sortable("refresh");
     $( "ul" ).disableSelection();
 });
