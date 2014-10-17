@@ -21,12 +21,7 @@ $(document).ready(function() {
     });
 
 	/*$(".test").sortable({ cursor: "move" });*/
-	$(function() {
-    $( "ul" ).sortable("refresh");
-    $( "ul" ).disableSelection("refresh");
-  	});
-
-
+	
 		/* CLICK LIST ITEM TO cross out*/
 		$(document.body).delegate(".list", ".on-list", "click", function(event){
 		$(this).toggleClass("highlight");
@@ -38,3 +33,7 @@ $(document).ready(function() {
 
 		
 });
+$(function() {
+    $( "ul" ).sortable("refresh");
+    $( "ul" ).disableSelection();
+  	});
