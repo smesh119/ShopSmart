@@ -23,6 +23,7 @@ $(document).ready(function() {
 	$(function() {
     $( "ul" ).sortable();
     $( "ul" ).disableSelection();
+    $("added").sortable("refresh");
 
   });
 
