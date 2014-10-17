@@ -21,7 +21,7 @@ $(document).ready(function() {
     });
 
 	/*$(".test").sortable({ cursor: "move" });*/
-	$(document.body).delegate(function() {
+	$(document.body).delegate("ul", function() {
     $( "ul" ).sortable("refresh");
     $( "ul" ).disableSelection("refresh");
 
