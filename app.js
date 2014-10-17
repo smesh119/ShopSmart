@@ -7,8 +7,8 @@ $(".query").keydown(function(e){
 	$(".list").append("<li class=\"added\"><span class=\"on-list\"> " + toAdd + "</span>
   	<img class=\"delete\" src=\"delete.gif\">
 	</li>");	
-	$("ul").sortable("refresh");
-	$( "ul" ).disableSelection();
+	toAdd.sortable("refresh");
+	toAdd.disableSelection();
 
 	}	
 });
