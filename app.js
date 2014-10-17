@@ -20,11 +20,10 @@ $(document).ready(function() {
         };
     });
 
-	/*$(".test").sortable({ cursor: "move" });*/
 	
   });
 
-	$(document.body).ready(function() {
+	$(function() {
     $( "ul" ).sortable("refresh");
     $( "ul" ).disableSelection();
 });
