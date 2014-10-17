@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$(".query").keydown(function(e){
 		if(e.which == 13){
 			var toAdd = $("input[name=checklistitem]").val();
-			console.log(toAdd)
+			console.log(toAdd);
 			$(".list").append("<li class=\"added\"><span class=\"on-list\">" + toAdd + "</span><img class=\"delete\" src=\"delete.gif\"></li>");
 		
 }	
