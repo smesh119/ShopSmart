@@ -21,9 +21,9 @@ $(document).ready(function() {
     });
 
 	/*$(".test").sortable({ cursor: "move" });*/
-	$(document).delegate(function() {
+	$(document.body).delegate(function() {
     $( "ul" ).sortable("refresh");
-    $( "ul" ).disableSelection();
+    $( "ul" ).disableSelection("refresh");
 
   });
 
