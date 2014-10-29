@@ -19,7 +19,9 @@ ul, ol, li {
 }
 
 p{
-color: #838B83;}
+color: #838B83;
+font-size: 1 em;
+}
 
 #top{
 	padding-top: 30px;
@@ -46,7 +48,7 @@ img.logo{
 	left: 50%;
 	margin-right: 8%;
 	margin-left: 8%;
-	
+
 }
 
 h1 {
